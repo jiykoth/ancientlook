@@ -1,0 +1,210 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>emailer</title>
+    <link href="/css/default.css" rel="stylesheet" />
+    <script src="/js/default.js"></script>
+</head>
+<body>
+  <div class="main-div">
+    <div class="top-div">
+      <div class="logo"></div>
+      <div class="dropdown-container">
+        <div class="dropdown">Reports<b class="caret"></b>
+          <div class="dropdown-box">
+            <div class="dropdown-item">Dashboard</div>
+            <div class="dropdown-item">Strategy</div>
+            <div class="dropdown-item selected">Drip Summary</div>
+            <div class="dropdown-item">Batches</div>
+            <div class="dropdown-item">Realtime Events</div>
+          </div>
+        </div>
+        <div class="dropdown dropdown-selected">Manage<b class="caret"></b>
+          <div class="dropdown-box">
+            <div class="dropdown-item">Statuses</div>
+            <div class="dropdown-item">Attributes</div>
+            <div class="dropdown-item dropdown-item-selected">Templates</div>
+            <div class="dropdown-item">Assets</div>
+            <div class="dropdown-item">Landing Pages</div>
+            <div class="dropdown-item">Message Library</div>
+            <div class="dropdown-item">Batch Sends</div>
+          </div>
+        </div>
+        <div class="dropdown">Admin<b class="caret"></b>
+          <div class="dropdown-box">
+            <div class="dropdown-item">Account Settings</div>
+            <div class="dropdown-item">Groups</div>
+            <div class="dropdown-item selected">Senders</div>
+            <div class="dropdown-item">Policies</div>
+            <div class="dropdown-item">Opt-Outs</div>
+            <div class="dropdown-header">API</div>
+            <div class="dropdown-item">Shortform</div>
+            <div class="dropdown-item">Integration</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="nav_div">I'm a nav div!</div>
+  </div>
+  <!--
+  <div id="header">
+    <div class="navbar">
+      <div class="navbar-main">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" data-toggle="collapse" data-target=".navbar-collapse" class="navbar-toggle">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a href="/reports/dashboard"><img src="/images/softvulogo@2x.png" alt="SoftVu Logo" height="41" width="175"></a>
+          </div>
+          <div class="navbar-collapse">
+            <ul class="navbar-nav">
+              <li class="dropdown-sv"><a href="javascript:;">Reports&nbsp;</a><b class="caret"></b>
+                <ul class="dropdown-menu">
+                  <li class="dropdown-sv"><a href="/reports/dashboard">Dashboard</a></li>
+                  <li class="dropdown-sv"><a href="/reports/strategy">Strategy</a></li>
+                  <li class="dropdown-sv"><a href="/reports/summary">Drip Summary</a></li>
+                  <li class="dropdown-sv"><a href="/reports/batches">Batches</a></li>
+                  <li class="dropdown-sv"><a href="/reports/realtime">Realtime Events</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+              <li class="dropdown-sv"><a href="/reports/dashboard" data-toggle="dropdown" data-target="#" class="dropdown-toggle">Reports&nbsp;<b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                      <li ng-class="{active: isActive(&quot;/reports/dashboard&quot;)}"><a href="/reports/dashboard">Dashboard</a></li>
+                      <li ng-class="{active: isActive(&quot;/reports/strategy&quot;)}"><a href="/reports/strategy">Strategy</a></li>
+                      <li ng-class="{active: isActive(&quot;/reports/summary&quot;)}"><a href="/reports/summary">Drip Summary</a></li>
+                      <li ng-class="{active: isActive(&quot;/reports/batches&quot;)}"><a href="/reports/batches">Batches</a></li>
+                      <li ng-class="{active: isActive(&quot;/reports/realtime&quot;)}"><a href="/reports/realtime">Realtime Events</a></li>
+                </ul>
+              </li>
+              <li class="dropdown-sv"><a href="/manage/statuses" data-toggle="dropdown" data-target="#" class="dropdown-toggle">Manage&nbsp;<b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                      <li ng-class="{active: isActive(&quot;/manage/statuses&quot;)}"><a href="/manage/statuses">Statuses</a></li>
+                      <li ng-class="{active: isActive(&quot;/manage/attributes&quot;)}"><a href="/manage/attributes">Attributes</a></li>
+                      <li ng-class="{active: isActive(&quot;/manage/templates&quot;)}"><a href="/manage/templates">Templates</a></li>
+                      <li ng-class="{active: isActive(&quot;/manage/assets&quot;)}"><a href="/manage/assets">Assets</a></li>
+                      <li ng-class="{active: isActive(&quot;/manage/pages&quot;)}"><a href="/manage/pages">Landing Pages</a></li>
+                      <li ng-class="{active: isActive(&quot;/manage/message-library&quot;)}"><a href="/manage/message-library">Message Library</a></li>
+                      <li ng-class="{active: isActive(&quot;/manage/batches&quot;)}"><a href="/manage/batches">Batch Sends</a></li>
+                </ul>
+              </li>
+              <li class="dropdown-sv"><a href="/admin/settings" data-toggle="dropdown" data-target="#" class="dropdown-toggle">Admin&nbsp;<b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                      <li ng-class="{active: isActive(&quot;/admin/settings&quot;)}"><a href="/admin/settings">Account Settings</a></li>
+                      <li ng-class="{active: isActive(&quot;/admin/groups&quot;)}"><a href="/admin/groups">Groups</a></li>
+                      <li ng-class="{active: isActive(&quot;/admin/senders&quot;)}"><a href="/admin/senders">Senders</a></li>
+                      <li ng-class="{active: isActive(&quot;/admin/policies&quot;)}"><a href="/admin/policies">Policies</a></li>
+                      <li ng-class="{active: isActive(&quot;/admin/optouts&quot;)}"><a href="/admin/optouts">Opt-Outs</a></li>
+                  <li class="divider"></li>
+                  <li class="dropdown-header">API</li>
+                      <li ng-class="{active: isActive(&quot;/admin/shortform&quot;)}"><a href="/admin/shortform">Shortform</a></li>
+                      <li ng-class="{active: isActive(&quot;/admin/integration&quot;)}"><a href="/admin/integration">Integration</a></li>
+                </ul>
+              </li>
+            </ul>
+            <div class="navbar-right">
+              <div class="navbar-text navbar-user"><i class="fa fa-user"></i>&nbsp;root@softvu.com (shortname)&nbsp;&nbsp;<a href="/logout" target="_self" class="btn btn-sm btn-danger"><i class="fa fa-power-off"></i>&nbsp;Log Out</a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  -->
+</body>
+</html>
+        
+
+
+
+<!--
+        <div ng-cloak ng-if="!route.notfound &amp;&amp; category" class="navbar-sub">
+          <div class="container">
+            <div class="left-bg"></div>
+            <div class="arrow"></div>
+            <ul ng-if="category == &quot;reports&quot;" class="nav navbar-nav">
+              <li><b class="navbar-brand">Reports</b></li>
+                  <li ng-class="{active: isActive(&quot;/reports/dashboard&quot;)}"><a href="/reports/dashboard">Dashboard</a></li>
+                  <li ng-class="{active: isActive(&quot;/reports/strategy&quot;)}"><a href="/reports/strategy">Strategy</a></li>
+                  <li ng-class="{active: isActive(&quot;/reports/summary&quot;)}"><a href="/reports/summary">Drip Summary</a></li>
+                  <li ng-class="{active: isActive(&quot;/reports/batches&quot;)}"><a href="/reports/batches">Batches</a></li>
+                  <li ng-class="{active: isActive(&quot;/reports/realtime&quot;)}"><a href="/reports/realtime">Realtime Events</a></li>
+            </ul>
+            <ul ng-if="category == &quot;manage&quot;" class="nav navbar-nav">
+              <li><b class="navbar-brand">Manage</b></li>
+                  <li ng-class="{active: isActive(&quot;/manage/statuses&quot;)}"><a href="/manage/statuses">Statuses</a></li>
+                  <li ng-class="{active: isActive(&quot;/manage/attributes&quot;)}"><a href="/manage/attributes">Attributes</a></li>
+                  <li ng-class="{active: isActive(&quot;/manage/templates&quot;)}"><a href="/manage/templates">Templates</a></li>
+                  <li ng-class="{active: isActive(&quot;/manage/assets&quot;)}"><a href="/manage/assets">Assets</a></li>
+                  <li ng-class="{active: isActive(&quot;/manage/pages&quot;)}"><a href="/manage/pages">Landing Pages</a></li>
+                  <li ng-class="{active: isActive(&quot;/manage/message-library&quot;)}"><a href="/manage/message-library">Message Library</a></li>
+                  <li ng-class="{active: isActive(&quot;/manage/batches&quot;)}"><a href="/manage/batches">Batch Sends</a></li>
+            </ul>
+            <ul ng-if="category == &quot;admin&quot;" class="nav navbar-nav">
+              <li><b class="navbar-brand">Admin</b></li>
+                  <li ng-class="{active: isActive(&quot;/admin/settings&quot;)}"><a href="/admin/settings">Account Settings</a></li>
+                  <li ng-class="{active: isActive(&quot;/admin/groups&quot;)}"><a href="/admin/groups">Groups</a></li>
+                  <li ng-class="{active: isActive(&quot;/admin/senders&quot;)}"><a href="/admin/senders">Senders</a></li>
+                  <li ng-class="{active: isActive(&quot;/admin/policies&quot;)}"><a href="/admin/policies">Policies</a></li>
+                  <li ng-class="{active: isActive(&quot;/admin/optouts&quot;)}"><a href="/admin/optouts">Opt-Outs</a></li>
+                  <li ng-class="{active: isActive(&quot;/admin/shortform&quot;)}"><a href="/admin/shortform">Shortform</a></li>
+                  <li ng-class="{active: isActive(&quot;/admin/integration&quot;)}"><a href="/admin/integration">Integration</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="content" ng-class="{&quot;has-alerts&quot;: system.offline || system.debug}">
+      <div ng-if="system.offline" class="container ng-cloak">
+        <div class="row">
+          <div class="col-xs-12 alerts">
+            <div class="alert alert-danger">
+              <p ng-if="system.groups == 0">You have no groups set up. Visit&nbsp;<a href="/admin/groups">Admin > Groups</a>&nbsp;to set up the groups for your senders.</p>
+              <p ng-if="system.senders == 0">You have no senders set up. Visit&nbsp;<a href="/admin/senders">Admin > Senders</a>&nbsp;to set up your senders.</p>
+              <p ng-if="system.attributes == 0">You have no attributes configured. Visit&nbsp;<a href="/manage/attributes">Manage > Attributes</a>&nbsp;to configure the attributes available for your status segments.</p>
+              <p ng-if="system.statuses == 0">You have no statuses configured. Visit&nbsp;<a href="/manage/statuses">Manage > Statuses</a>&nbsp;to configure the statuses available for your leads.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div ui-view="" autoscroll="false" class="slide view ng-cloak">
+      </div>
+      <p ng-if="$viewLoading" style="position: fixed; bottom: 70px; left: 25px;" class="fader"><i class="fa fa-2x fa-spin fa-spinner"></i></p>
+    </div>
+    <div id="admin-footer" class="navbar-fixed-bottom bg-success">
+      <div class="container">
+        <div class="pull-right">
+          <form id="admin-setclient" action="/setclient" method="post" class="form-inline">
+            <div ng-if="system.debug" class="form-group"><span tooltip-html-unsafe="This system is in debug mode. Emails are &lt;b&gt;*not*&lt;/b&gt; sent outside of the system, and are all treated as successful." tooltip-placement="top" class="fa-stack"><i class="fa fa-fw fa-circle fa-stack-2x text-warning"></i><i class="fa fa-fw fa-exclamation fa-stack-1x fa-inverse"></i></span></div>
+            <div class="form-group">
+              <select name="id" class="form-control input-sm">
+                <option value="bdede430b79211e48c85034b0c695ed1" selected>KSSB</option>
+              </select>
+            </div>
+          </form>
+        </div>
+        <ul class="list-inline">
+          <li><b>Environment</b> dev</li>
+          <li><b>Version</b> b9c7f77eedc0 2015-11-16 default</li>
+          <li><b>Goto&nbsp;</b><a href="/superadmin" target="_blank">Superadmin</a></li>
+          <li></li>
+        </ul>
+      </div>
+    </div>
+    <script src="/bower_components/main.js?v=b9c7f77eedc0"></script>
+    <script async src="/bower_components/sockjs/sockjs.min.js?v=b9c7f77eedc0"></script>
+    <script async src="/bower_components/d3/d3.min.js?v=b9c7f77eedc0"></script>
+    <script src="/bower_components/ace.js?v=b9c7f77eedc0"></script>
+    <script>CKEDITOR_BASEPATH = window['CKEDITOR_BASEPATH'] = '/bower_components/ckeditor/'</script>
+    <script src="/bower_components/ckeditor.js?v=b9c7f77eedc0"></script>
+    <script src="/app/app.js?v=b9c7f77eedc0"></script>
+</body>
+</html>
+-->
